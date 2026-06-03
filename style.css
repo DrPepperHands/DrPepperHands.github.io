@@ -85,7 +85,7 @@ body {
 /* ── MASTHEAD ────────────────────────────────────────────── */
 
 .masthead {
-  border-bottom: var(--rule-heavy);
+  /* border-bottom: var(--rule-heavy); */
   padding: 18px 0 0;
 }
 
@@ -120,9 +120,9 @@ body {
 }
 
 .masthead-name {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(72px, 12vw, 148px);
-  font-weight: 900;
+  font-weight: 500;
   line-height: 0.9;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ body {
 .masthead-sub p {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1.25rem;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -180,7 +180,7 @@ body {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 8px 22px;
@@ -323,7 +323,7 @@ body {
 }
 
 .info-box p {
-  font-size: 13px;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 
@@ -377,7 +377,7 @@ body {
 .services-tagline {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 2rem;
   line-height: 1.6;
   padding-left: 24px;
   padding-top: 4px;
@@ -404,7 +404,7 @@ body {
 
 .ad-cell .ad-category {
   font-family: 'Oswald', sans-serif;
-  font-size: 9px;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -487,14 +487,14 @@ body {
 .pricing-table-head span {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic;
-  font-size: 13px;
+  /* font-size: 0.875rem; */
   opacity: 0.7;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 table th {
@@ -522,7 +522,7 @@ table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
 table td.price-cell {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.875rem;
   background: var(--yellow);
   white-space: nowrap;
 }
@@ -553,7 +553,7 @@ table td.tier-name {
 .portfolio-masthead .sub {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 1.25rem;
   margin-top: 6px;
   color: #555;
 }
@@ -599,7 +599,7 @@ table td.tier-name {
   font-weight: 900;
   font-size: 20px;
   line-height: 1.1;
-  margin-bottom: 6px;
+  margin-bottom: 1rem;
 }
 
 /* Scale headline with card width */
@@ -619,9 +619,9 @@ table td.tier-name {
 .pf-item .pf-client {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.875rem;
   color: #666;
-  margin-bottom: 6px;
+  margin-bottom: 0.25rem;
 }
 
 .pf-item .pf-type {
@@ -644,7 +644,7 @@ table td.tier-name {
 }
 
 .pf-item .pf-desc {
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 1.6;
   margin-top: 8px;
   color: var(--ink-mid);
@@ -770,7 +770,7 @@ table td.tier-name {
 }
 
 .cta-box p {
-  font-size: 13px;
+  font-size: 0.875rem;
   line-height: 1.6;
   opacity: 0.8;
 }
@@ -781,7 +781,7 @@ table td.tier-name {
   color: var(--ink);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   padding: 10px 24px;
