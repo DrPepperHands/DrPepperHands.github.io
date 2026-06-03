@@ -221,7 +221,7 @@ body {
 }
 
 .section-flag .flag-ornament {
-  font-size: 14px;
+  font-size: 1.5rem;
   padding: 0 12px;
   color: var(--ink);
 }
@@ -267,7 +267,7 @@ body {
 
 .body-text {
   font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--ink-mid);
 }
@@ -434,12 +434,12 @@ body {
 }
 
 .ad-cell .ad-price sup {
-  font-size: 14px;
+  font-size: 1rem;
   vertical-align: super;
 }
 
 .ad-cell .ad-desc {
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 1.55;
   color: var(--ink-mid);
   margin-top: 8px;
@@ -479,7 +479,7 @@ body {
 .pricing-table-head h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -530,7 +530,7 @@ table td.price-cell {
 table td.tier-name {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 
@@ -740,7 +740,7 @@ table td.tier-name {
 }
 
 .contact-detail .cd-value {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -810,7 +810,7 @@ table td.tier-name {
 .footer-ticker-track span {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--cream);
