@@ -1,1 +1,1353 @@
-<h1>Coming soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¥ØÛ ŁØØK ĆØØŁ — YLC Creative | Wichita Web Design & Branding</title>
+<meta name="description" content="Nick Drake / YLC Creative — Wichita-based web design, branding, and marketing that actually looks cool. Starting at $549.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Oswald:wght@400;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --cream-dark: #e8e0cc;
+    --ink: #1a1410;
+    --ink-mid: #2c2418;
+    --yellow: #e8e832;
+    --yellow-dark: #c8c800;
+    --rule: 2px solid #1a1410;
+    --rule-thin: 1px solid #1a1410;
+    --rule-thick: 4px solid #1a1410;
+    --rule-heavy: 8px solid #1a1410;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  /* ── TICKER ── */
+  .ticker-wrap {
+    background: var(--yellow);
+    border-bottom: var(--rule-thick);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 6px 0;
+  }
+  .ticker-track {
+    display: inline-block;
+    animation: ticker 22s linear infinite;
+  }
+  .ticker-track span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 28px;
+  }
+  .ticker-track span::after {
+    content: '✦';
+    margin-left: 28px;
+  }
+  @keyframes ticker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── WRAPPER ── */
+  .broadsheet {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    border-bottom: var(--rule-heavy);
+    padding: 18px 0 0;
+  }
+  .masthead-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--rule-thin);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+  }
+  .masthead-top .edition { font-style: italic; }
+  .masthead-top .price-tag {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 2px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .masthead-hero {
+    text-align: center;
+    padding: 12px 0 4px;
+    position: relative;
+  }
+  .masthead-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(72px, 12vw, 148px);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .masthead-name .ylc-accent { color: var(--ink); position: relative; }
+
+  /* Yellow text-shadow glow on the special chars */
+  .masthead-name .glyph {
+    -webkit-text-stroke: 2px var(--ink);
+    paint-order: stroke fill;
+    text-shadow: 4px 4px 0 var(--yellow);
+  }
+
+  .masthead-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 0 14px;
+    border-top: var(--rule-thin);
+    margin-top: 10px;
+  }
+  .masthead-sub .rule-line {
+    flex: 1;
+    height: 1px;
+    background: var(--ink);
+  }
+  .masthead-sub p {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  /* ── NAV BAR ── */
+  .nav-bar {
+    background: var(--ink);
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .nav-bar a {
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 22px;
+    border-right: 1px solid #3a2e20;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-bar a:first-child { border-left: 1px solid #3a2e20; }
+  .nav-bar a:hover { background: var(--yellow); color: var(--ink); }
+
+  /* ── SECTION HEADERS ── */
+  .section-flag {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 36px 0 0;
+    border-top: var(--rule-thick);
+    border-bottom: var(--rule);
+  }
+  .section-flag .flag-label {
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 5px 16px;
+  }
+  .section-flag .flag-rule {
+    flex: 1;
+    height: 2px;
+    background: transparent;
+  }
+  .section-flag .flag-ornament {
+    font-size: 14px;
+    padding: 0 12px;
+    color: var(--ink);
+  }
+
+  /* ── ABOUT SECTION ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr 2px 240px;
+    gap: 0;
+    padding: 24px 0;
+    border-bottom: var(--rule);
+  }
+  .col-rule { background: var(--ink); }
+  .about-col { padding: 0 24px; }
+  .about-col:first-child { padding-left: 0; }
+  .about-col:last-child { padding-right: 0; }
+
+  .about-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .about-headline em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .drop-cap::first-letter {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 72px;
+    float: left;
+    line-height: 0.75;
+    margin: 6px 8px 0 0;
+    color: var(--ink);
+  }
+
+  .body-text {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--ink-mid);
+  }
+  .body-text + .body-text { margin-top: 12px; }
+
+  /* Ornament column */
+  .ornament-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-left: 20px;
+  }
+
+  /* SVG concentric circles */
+  .concentric {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+  }
+
+  .pull-quote {
+    border-top: var(--rule-thick);
+    border-bottom: var(--rule-thick);
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .info-box {
+    border: var(--rule);
+    padding: 14px;
+    margin-top: 16px;
+    background: var(--cream-dark);
+  }
+  .info-box .info-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-bottom: var(--rule-thin);
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+  .info-box p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .info-box a {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* ── SERVICES SECTION ── */
+  .services-intro {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 0;
+    border-bottom: var(--rule);
+    padding: 20px 0;
+  }
+  .services-lede {
+    padding-right: 24px;
+    border-right: var(--rule);
+  }
+  .services-lede-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .services-tagline {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-left: 24px;
+    padding-top: 4px;
+  }
+
+  /* Ad grid */
+  .ad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-left: var(--rule);
+    border-top: var(--rule);
+    margin-top: 0;
+  }
+  .ad-cell {
+    border-right: var(--rule);
+    border-bottom: var(--rule);
+    padding: 16px 14px;
+    position: relative;
+    transition: background 0.15s;
+  }
+  .ad-cell:hover { background: var(--cream-dark); }
+
+  .ad-cell .ad-category {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-bottom: var(--rule-thin);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  .ad-cell .ad-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .ad-cell .ad-price {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1;
+    margin: 8px 0 6px;
+    background: var(--yellow);
+    display: inline-block;
+    padding: 2px 8px;
+  }
+  .ad-cell .ad-price sup {
+    font-size: 14px;
+    vertical-align: super;
+  }
+  .ad-cell .ad-desc {
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--ink-mid);
+    margin-top: 8px;
+  }
+  .ad-cell .ad-ornament {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 22px;
+    opacity: 0.15;
+  }
+
+  /* Wide service ad */
+  .ad-cell.wide { grid-column: span 2; }
+  .ad-cell.wide .ad-name { font-size: 32px; }
+  .ad-cell.wide .ad-price { font-size: 42px; }
+
+  /* ── PRICING TABLE ── */
+  .pricing-table-wrap {
+    border: var(--rule);
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  .pricing-table-head {
+    background: var(--ink);
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 12px;
+  }
+  .pricing-table-head h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .pricing-table-head span {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  table th {
+    background: var(--cream-dark);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    text-align: left;
+    border-bottom: var(--rule);
+    border-right: var(--rule-thin);
+  }
+  table td {
+    padding: 9px 14px;
+    border-bottom: var(--rule-thin);
+    border-right: var(--rule-thin);
+    vertical-align: top;
+  }
+  table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+  table td.price-cell {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background: var(--yellow);
+    white-space: nowrap;
+  }
+  table td.tier-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  /* ── PORTFOLIO SECTION ── */
+  .portfolio-masthead {
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: var(--rule-thick);
+  }
+  .portfolio-masthead h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(40px, 7vw, 80px);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .portfolio-masthead .sub {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 6px;
+    color: #555;
+  }
+
+  /* Broadsheet portfolio grid — mixed sizes like a newspaper page */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-left: var(--rule);
+    border-top: var(--rule);
+  }
+  .pf-item {
+    border-right: var(--rule);
+    border-bottom: var(--rule);
+    padding: 16px 14px;
+    position: relative;
+    transition: background 0.12s;
+  }
+  .pf-item:hover { background: var(--cream-dark); }
+  .pf-item a { text-decoration: none; color: inherit; display: block; }
+
+  /* Layout variants */
+  .pf-item.span2 { grid-column: span 2; }
+  .pf-item.span3 { grid-column: span 3; }
+  .pf-item.span4 { grid-column: span 4; }
+  .pf-item.span6 { grid-column: span 6; }
+
+  .pf-item .pf-industry {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #888;
+    border-bottom: var(--rule-thin);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+  .pf-item .pf-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .pf-item.span3 .pf-name { font-size: 30px; }
+  .pf-item.span4 .pf-name { font-size: 38px; }
+  .pf-item.span6 .pf-name { font-size: 48px; }
+
+  .pf-item .pf-client {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 6px;
+  }
+  .pf-item .pf-type {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'Oswald', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  .pf-item .pf-type.yellow-tag {
+    background: var(--yellow);
+    color: var(--ink);
+  }
+  .pf-item .pf-desc {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 8px;
+    color: var(--ink-mid);
+  }
+  .pf-item .pf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 1px;
+    transition: border-color 0.15s;
+  }
+  .pf-item .pf-link:hover { border-color: var(--ink); }
+  .pf-item .pf-year {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #aaa;
+    letter-spacing: 0.1em;
+  }
+
+  /* Decorative vintage SVG cuts — inline in cells */
+  .vintage-cut {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.55;
+  }
+  .vintage-cut svg { width: 100%; height: 100%; }
+
+  /* ── CONTACT SECTION ── */
+  .contact-wrap {
+    margin-top: 36px;
+    border: var(--rule-heavy);
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr 2px 280px;
+    gap: 0;
+  }
+  .contact-col { padding: 28px 24px; }
+  .contact-col:first-child { padding-left: 28px; }
+  .contact-col:last-child { padding-right: 28px; }
+
+  .contact-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .contact-detail {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: var(--rule-thin);
+  }
+  .contact-detail .cd-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #888;
+    min-width: 52px;
+  }
+  .contact-detail .cd-value {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .contact-detail a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--yellow); }
+
+  .cta-box {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 22px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .cta-box h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  .cta-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--ink);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.1s;
+  }
+  .cta-btn:hover { background: var(--yellow-dark); transform: translateY(-1px); }
+
+  /* ── FOOTER TICKER ── */
+  .footer-ticker {
+    background: var(--ink);
+    border-top: var(--rule-thick);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin-top: 0;
+  }
+  .footer-ticker-track {
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+  }
+  .footer-ticker-track span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    padding: 0 28px;
+  }
+  .footer-ticker-track span.yellow { color: var(--yellow); }
+  .footer-ticker-track .sep { color: var(--yellow); margin: 0 6px; }
+
+  .footer-colophon {
+    background: var(--cream-dark);
+    border-top: var(--rule-thin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #888;
+  }
+
+  /* ── VINTAGE ILLUSTRATION SVGs ── */
+  /* Hand-drawn feel via inline SVG in cells */
+
+  /* ── DIVIDER ORNAMENTS ── */
+  .ornament-rule {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+  }
+  .ornament-rule .or-line { flex: 1; height: 1px; background: var(--ink); }
+  .ornament-rule .or-glyph {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 16px; }
+    .col-rule { display: none; }
+    .about-col { padding: 0; }
+    .ornament-col { flex-direction: row; justify-content: flex-start; padding: 0; }
+    .services-intro { grid-template-columns: 1fr; }
+    .services-lede { border-right: none; border-bottom: var(--rule); padding-right: 0; padding-bottom: 16px; }
+    .services-tagline { padding-left: 0; padding-top: 12px; }
+    .ad-grid { grid-template-columns: repeat(2, 1fr); }
+    .ad-cell.wide { grid-column: span 2; }
+    .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+    .pf-item.span4, .pf-item.span6 { grid-column: span 3; }
+    .pf-item.span3 { grid-column: span 3; }
+    .contact-inner { grid-template-columns: 1fr; }
+    .contact-col { padding: 20px 16px; }
+  }
+  @media (max-width: 600px) {
+    .ad-grid { grid-template-columns: 1fr; }
+    .ad-cell.wide { grid-column: span 1; }
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .pf-item.span4, .pf-item.span6, .pf-item.span3 { grid-column: span 2; }
+    .nav-bar { flex-wrap: wrap; }
+    .nav-bar a { font-size: 10px; padding: 7px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Wichita Web Design</span>
+    <span>Branding & Identity</span>
+    <span>Marketing Assets</span>
+    <span>Starting at $549</span>
+    <span>youlookcool.org</span>
+    <span>Wichita Web Design</span>
+    <span>Branding & Identity</span>
+    <span>Marketing Assets</span>
+    <span>Starting at $549</span>
+    <span>youlookcool.org</span>
+    <span>Wichita Web Design</span>
+    <span>Branding & Identity</span>
+    <span>Marketing Assets</span>
+    <span>Starting at $549</span>
+    <span>youlookcool.org</span>
+    <span>Wichita Web Design</span>
+    <span>Branding & Identity</span>
+    <span>Marketing Assets</span>
+    <span>Starting at $549</span>
+    <span>youlookcool.org</span>
+  </div>
+</div>
+
+<div class="broadsheet">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="edition">Established 2015 &nbsp;·&nbsp; Nick Drake / YLC Creative &nbsp;·&nbsp; Wichita, Kansas</span>
+      <span class="price-tag">Free Consultation</span>
+    </div>
+    <div class="masthead-hero">
+      <h1 class="masthead-name">
+        <span class="glyph">¥ØÛ</span> <span class="glyph">ŁØØK</span> <span class="glyph">ĆØØŁ</span>
+      </h1>
+      <div class="masthead-sub">
+        <div class="rule-line"></div>
+        <p>Kick-a** creative. Smart-a** strategy. No agency BS.</p>
+        <div class="rule-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav-bar" aria-label="Page sections">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.behance.net/ndd" target="_blank" rel="noopener">Behance ↗</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-flag">
+      <div class="flag-label">About the Designer</div>
+      <div class="flag-rule"></div>
+      <div class="flag-ornament">✦</div>
+    </div>
+
+    <div class="about-grid">
+      <!-- Col 1: Headline + bio -->
+      <div class="about-col">
+        <h2 class="about-headline">Wichita's<br><em>scrappiest</em><br>design shop.</h2>
+        <div class="ornament-rule" aria-hidden="true">
+          <div class="or-line"></div>
+          <span class="or-glyph">❧</span>
+          <div class="or-line"></div>
+        </div>
+        <p class="body-text drop-cap">I'm Nick Drake — a Wichita-based designer who builds websites and marketing materials that actually look cool, without the agency markups or the five-week discovery phase. I work directly with business owners to get things done.</p>
+        <p class="body-text" style="margin-top:12px;">What I do is simple: I take your business and I make it look like it belongs at the top of its market. From full e-commerce builds to a single killer business card, the work is intentional, strategic, and — yes — cool.</p>
+      </div>
+
+      <div class="col-rule"></div>
+
+      <!-- Col 2: More bio -->
+      <div class="about-col">
+        <div class="pull-quote">
+          <p>"Stop letting your competition look better online than you do."</p>
+        </div>
+        <p class="body-text" style="margin-top:16px;">Over the past decade I've worked with commercial real estate brokerages, luxury resorts, ranch investment platforms, healthcare networks, auto body shops, hair salons, and everyone in between. What they all had in common: they needed to look as good as they actually are.</p>
+        <p class="body-text" style="margin-top:12px;">My clients get direct access to me — not an account manager, not a junior designer assigned after the sale. If you hire me, you get me. That's the deal.</p>
+        <div class="info-box" style="margin-top:16px;">
+          <div class="info-label">Currently operating as</div>
+          <p><strong>Nick Drake Design LLC</strong> · DBA <strong>YLC Creative</strong><br>
+          Wichita, Kansas &nbsp;·&nbsp; <a href="mailto:hello@youlookcool.org">hello@youlookcool.org</a><br>
+          <a href="tel:3164481651">(316) 448-1651</a></p>
+        </div>
+      </div>
+
+      <div class="col-rule"></div>
+
+      <!-- Col 3: Ornament / stats -->
+      <div class="ornament-col">
+        <!-- Concentric circles SVG — your brand motif -->
+        <svg class="concentric" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="90" cy="90" r="88" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="78" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="68" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="58" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="48" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="38" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="28" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="18" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="8" fill="#1a1410"/>
+        </svg>
+
+        <div style="width:100%;">
+          <div style="border:var(--rule); padding:12px; text-align:center; margin-bottom:10px;">
+            <div style="font-family:'Oswald',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#888; margin-bottom:4px;">Projects Completed</div>
+            <div style="font-family:'Playfair Display',serif; font-size:48px; font-weight:900; line-height:1;">10+</div>
+          </div>
+          <div style="border:var(--rule); padding:12px; text-align:center; margin-bottom:10px;">
+            <div style="font-family:'Oswald',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#888; margin-bottom:4px;">Industries Served</div>
+            <div style="font-family:'Playfair Display',serif; font-size:48px; font-weight:900; line-height:1;">8+</div>
+          </div>
+          <div style="border:var(--rule); padding:12px; text-align:center;">
+            <div style="font-family:'Oswald',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#888; margin-bottom:4px;">Years Active</div>
+            <div style="font-family:'Playfair Display',serif; font-size:48px; font-weight:900; line-height:1;">10+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-flag">
+      <div class="flag-label">Services</div>
+      <div class="flag-rule"></div>
+      <div class="flag-ornament">✦</div>
+    </div>
+
+    <div class="services-intro">
+      <div class="services-lede">
+        <h2 class="services-lede-headline">Design &amp;<br>Marketing<br>Services</h2>
+        <p class="body-text" style="margin-top:10px; font-size:13px;">From scrappy solo entrepreneurs to growing regional businesses — I help companies punch above their weight class without the heart attack-inducing price tags.</p>
+      </div>
+      <p class="services-tagline">I'm a Wichita-based designer who creates websites and marketing materials that actually look cool — without the agency BS. From solo entrepreneurs to growing businesses, I help scrappy companies compete with the big players.</p>
+    </div>
+
+    <!-- Service ad grid -->
+    <div class="ad-grid" aria-label="Services offered">
+
+      <div class="ad-cell wide">
+        <div class="ad-category">Website Design &amp; Development</div>
+        <div class="ad-name">Web Design<br>&amp; Development</div>
+        <!-- Vintage decorative rule -->
+        <svg width="100%" height="12" viewBox="0 0 300 12" aria-hidden="true" style="margin:8px 0;">
+          <line x1="0" y1="6" x2="300" y2="6" stroke="#1a1410" stroke-width="1"/>
+          <line x1="0" y1="3" x2="300" y2="3" stroke="#1a1410" stroke-width="0.5"/>
+          <line x1="0" y1="9" x2="300" y2="9" stroke="#1a1410" stroke-width="0.5"/>
+        </svg>
+        <div class="ad-price"><sup>$</sup>549</div>
+        <p class="ad-desc">Custom websites that look killer and actually convert visitors into paying customers. Mobile-friendly, fast-loading, and built to rank on Google. Webflow &amp; WordPress. Static sites to complex CMS builds.</p>
+        <div class="ad-ornament">⬛</div>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Brand Identity</div>
+        <div class="ad-name">Logo Design &amp; Branding</div>
+        <div class="ad-price"><sup>$</sup>799</div>
+        <p class="ad-desc">Brand identities that make you instantly recognizable and professionally credible. Logo design, color schemes, and brand guidelines that don't suck.</p>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Print &amp; Digital</div>
+        <div class="ad-name">Marketing Assets</div>
+        <div class="ad-price"><sup>$</sup>499</div>
+        <p class="ad-desc">Business cards people hold onto, presentations that don't put audiences to sleep, and marketing materials that actually work.</p>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Visual Content</div>
+        <div class="ad-name">AI Photos &amp; Videos</div>
+        <div class="ad-price"><sup>$</sup>299</div>
+        <p class="ad-desc">Photo enhancement, product image visualization, and AI-generated content that makes you look like you hired a full creative team.</p>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Social</div>
+        <div class="ad-name">Social Media Content</div>
+        <div class="ad-price"><sup>$</sup>299</div>
+        <p class="ad-desc">Scroll-stopping graphics, ad sets, and carousel designs that look like a brand, not a template.</p>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Presentations</div>
+        <div class="ad-name">Presentation Design</div>
+        <div class="ad-price"><sup>$</sup>499</div>
+        <p class="ad-desc">PowerPoint &amp; Google Slides decks that executive teams are proud to show. Template systems built for non-designers.</p>
+      </div>
+
+      <div class="ad-cell">
+        <div class="ad-category">Photography</div>
+        <div class="ad-name">Product &amp; Event Photography</div>
+        <div class="ad-price">Custom</div>
+        <p class="ad-desc">On-location product photography, interior shoots, and event coverage. Real images that tell your brand story.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING TABLE -->
+  <section id="pricing">
+    <div class="section-flag">
+      <div class="flag-label">Website Pricing</div>
+      <div class="flag-rule"></div>
+      <div class="flag-ornament">✦</div>
+    </div>
+
+    <!-- Static Sites -->
+    <div class="pricing-table-wrap">
+      <div class="pricing-table-head">
+        <h3>Static Websites</h3>
+        <span>— Perfect for businesses that need to look professional without breaking the bank</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:160px;">Tier</th>
+            <th>Best For</th>
+            <th>Pages</th>
+            <th>Forms</th>
+            <th>Integrations</th>
+            <th style="width:140px;">Starting Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tier-name">Single Landing Page</td>
+            <td>Email signups, webinar registration, product launches, event pages</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td class="price-cell">$549</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Micro Brochure Site</td>
+            <td>Service provider portfolios, consultant sites, small restaurant websites, freelancer showcases</td>
+            <td>3–4</td>
+            <td>1</td>
+            <td>1</td>
+            <td class="price-cell">$849</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Business Brochure Site</td>
+            <td>Multi-service company sites, professional practice websites, manufacturing company profiles, non-profits</td>
+            <td>5–7</td>
+            <td>2</td>
+            <td>2</td>
+            <td class="price-cell">$1,449</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Dynamic Sites -->
+    <div class="pricing-table-wrap" style="margin-top:20px;">
+      <div class="pricing-table-head">
+        <h3>Dynamic Websites</h3>
+        <span>— For businesses that need their website to work as hard as they do</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:160px;">Tier</th>
+            <th>Best For</th>
+            <th>Pages</th>
+            <th>Blog / Portfolio</th>
+            <th>Forms</th>
+            <th style="width:140px;">Starting Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tier-name">Starter Dynamic</td>
+            <td>Blog-enabled businesses, service booking platforms, small business directories</td>
+            <td>5–7</td>
+            <td>Yes</td>
+            <td>1</td>
+            <td class="price-cell">$2,499</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Small Business Site</td>
+            <td>Multi-location businesses, professional service firms, healthcare practice sites, educational organizations</td>
+            <td>5–12</td>
+            <td>Yes</td>
+            <td>2</td>
+            <td class="price-cell">$3,499</td>
+          </tr>
+          <tr>
+            <td class="tier-name">Big Business Site</td>
+            <td>Enterprise company sites, complex service showcases, multi-department organizations, large professional practices</td>
+            <td>7–15</td>
+            <td>Yes</td>
+            <td>3</td>
+            <td class="price-cell">$4,999</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:11px; font-style:italic; color:#888; margin-top:10px; line-height:1.6;">* Hosting recommended: Standard plan $300 for the first year, $30/month after (static) · $500 for the first year, $50/month after (dynamic). Additional static pages $75 each. E-commerce pricing available on request.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="portfolio-masthead">
+      <h2>Selected Work</h2>
+      <p class="sub">A decade of making Wichita businesses look like they mean business.</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Featured: Block Real Estate — spans 4 -->
+      <div class="pf-item span4">
+        <span class="pf-year">2021</span>
+        <div class="pf-industry">Real Estate &nbsp;·&nbsp; Web Design</div>
+        <div class="pf-name">Commercial Real Estate Platform</div>
+        <div class="pf-client">Block Real Estate Services &mdash; blockllc.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Strategy</span>
+        <!-- Vintage cut: simple woodcut-style building illustration -->
+        <div class="vintage-cut">
+          <svg viewBox="0 0 320 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="20" y="20" width="60" height="55" stroke="#1a1410" stroke-width="1.5" fill="none"/>
+            <rect x="30" y="30" width="12" height="12" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="50" y="30" width="12" height="12" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="35" y="52" width="10" height="23" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="90" y="10" width="80" height="65" stroke="#1a1410" stroke-width="2" fill="none"/>
+            <line x1="90" y1="10" x2="130" y2="2" stroke="#1a1410" stroke-width="1.5"/>
+            <line x1="170" y1="10" x2="130" y2="2" stroke="#1a1410" stroke-width="1.5"/>
+            <rect x="105" y="30" width="14" height="14" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="127" y="30" width="14" height="14" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="149" y="30" width="14" height="14" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="115" y="52" width="14" height="23" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="180" y="30" width="45" height="45" stroke="#1a1410" stroke-width="1.5" fill="none"/>
+            <rect x="190" y="40" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="205" y="40" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="192" y="58" width="8" height="17" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="240" y="15" width="50" height="60" stroke="#1a1410" stroke-width="1.5" fill="none"/>
+            <rect x="248" y="25" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="264" y="25" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="248" y="40" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="264" y="40" width="10" height="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="253" y="56" width="10" height="19" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <line x1="0" y1="75" x2="320" y2="75" stroke="#1a1410" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <p class="pf-desc">Transformed Kansas City's largest commercial real estate brokerage with a complete digital overhaul — modernizing an outdated ASP.NET database system into a sleek WordPress platform with drone photography, vibrant brand colors, and a UX that makes complex property data actually accessible.</p>
+        <a href="https://www.behance.net/gallery/146115775/Commercial-Real-Estate-Website" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- Camden Resort — spans 2 -->
+      <div class="pf-item span2">
+        <span class="pf-year">2021</span>
+        <div class="pf-industry">Hospitality</div>
+        <div class="pf-name">Luxury Ozark Resort Experience</div>
+        <div class="pf-client">Camden on the Lake Resort</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Branding</span>
+        <p class="pf-desc">Complete digital transformation for one of Lake of the Ozarks' premier luxury resorts — hotel booking, event scheduling, restaurant menus with sortable categories, and real-time boat gas pricing.</p>
+        <a href="https://www.behance.net/gallery/147863041/Ozark-Resort-Website" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- G7 Ranches — spans 3 -->
+      <div class="pf-item span3">
+        <span class="pf-year">2021</span>
+        <div class="pf-industry">Real Estate</div>
+        <div class="pf-name">Ranch Investment Platform</div>
+        <div class="pf-client">G7 Ranches &mdash; g7ranches.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Strategy</span>
+        <span class="pf-type yellow-tag">Branding</span>
+        <!-- Vintage landscape cut -->
+        <div class="vintage-cut">
+          <svg viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0 55 Q40 30 80 45 Q120 20 160 40 Q200 15 240 35 Q260 25 280 30 L280 70 L0 70 Z" stroke="#1a1410" stroke-width="1" fill="rgba(26,20,16,0.08)"/>
+            <circle cx="60" cy="18" r="10" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <line x1="60" y1="8" x2="60" y2="2" stroke="#1a1410" stroke-width="1"/>
+            <line x1="50" y1="14" x2="45" y2="10" stroke="#1a1410" stroke-width="1"/>
+            <line x1="70" y1="14" x2="75" y2="10" stroke="#1a1410" stroke-width="1"/>
+            <!-- fence posts -->
+            <line x1="10" y1="48" x2="10" y2="60" stroke="#1a1410" stroke-width="1.5"/>
+            <line x1="30" y1="46" x2="30" y2="58" stroke="#1a1410" stroke-width="1.5"/>
+            <line x1="50" y1="44" x2="50" y2="56" stroke="#1a1410" stroke-width="1.5"/>
+            <line x1="10" y1="52" x2="50" y2="50" stroke="#1a1410" stroke-width="1"/>
+            <line x1="10" y1="56" x2="50" y2="54" stroke="#1a1410" stroke-width="1"/>
+          </svg>
+        </div>
+        <p class="pf-desc">Built from scratch for ranch investment broker Greg — developed the entire 'G7 Lifestyle' concept with custom MLS integration, property filtering, and content strategy that turned his passion into compelling web copy.</p>
+        <a href="https://www.behance.net/gallery/147863743/Ranch-Real-Estate-Website" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- Old Town Association — spans 3 -->
+      <div class="pf-item span3">
+        <span class="pf-year">2019</span>
+        <div class="pf-industry">Tourism / Community</div>
+        <div class="pf-name">Wichita Old Town Digital Hub</div>
+        <div class="pf-client">Old Town Association &mdash; oldtownwichita.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Branding</span>
+        <p class="pf-desc">App-like mobile experience functioning as both a business directory and event guide for Wichita's Old Town district — with color-coded category navigation, membership tiers, and a revenue-generating backend for the association.</p>
+        <a href="https://www.behance.net/gallery/78116227/Mobile-Desktop-Business-Directory-App" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- CCNK — spans 2 -->
+      <div class="pf-item span2">
+        <span class="pf-year">2024</span>
+        <div class="pf-industry">Healthcare / Non-Profit</div>
+        <div class="pf-name">Statewide Healthcare Network</div>
+        <div class="pf-client">Community Care Network of Kansas</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Strategy</span>
+        <p class="pf-desc">Complete digital transformation including a custom membership CMS site and a mobile app for their annual statewide conference — hand-coded HTML/CSS, dues collection, continuing education tracking, and member communication.</p>
+      </div>
+
+      <!-- Blake Clotia — spans 2 -->
+      <div class="pf-item span2">
+        <span class="pf-year">2019</span>
+        <div class="pf-industry">Manufacturing</div>
+        <div class="pf-name">Modular Manufacturing Showcase</div>
+        <div class="pf-client">Blake Clotia &mdash; blakeclotia.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Branding</span>
+        <p class="pf-desc">Bold, block-structured site design that visually mirrors their modular cabinetry approach — off-grid layout demonstrating how different-sized content blocks achieve cohesive design.</p>
+        <a href="https://www.behance.net/gallery/78098585/Desktop-Prototype" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- Midwest Hail Response — spans 2 -->
+      <div class="pf-item span2">
+        <span class="pf-year">2019</span>
+        <div class="pf-industry">Automotive Services</div>
+        <div class="pf-name">Mobile Hail Repair Brand</div>
+        <div class="pf-client">Midwest Hail Response</div>
+        <span class="pf-type">Branding</span>
+        <span class="pf-type yellow-tag">Strategy</span>
+        <p class="pf-desc">Bold brand identity for a paintless dent repair business that travels nationwide — two logo iterations, truck decals, embroidered apparel, and business cards that actually get kept.</p>
+        <a href="https://www.behance.net/gallery/147865337/Auto-Service-Branding" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- LDCPH — spans 3 -->
+      <div class="pf-item span3">
+        <span class="pf-year">2023</span>
+        <div class="pf-industry">Healthcare / Government</div>
+        <div class="pf-name">Public Health Impact Report</div>
+        <div class="pf-client">Lawrence Douglas County Public Health</div>
+        <span class="pf-type">Print Design</span>
+        <span class="pf-type yellow-tag">Graphic Design</span>
+        <!-- vintage ornament: medical cross with decorative border -->
+        <div class="vintage-cut" style="height:60px;">
+          <svg viewBox="0 0 260 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1" y="1" width="258" height="53" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <rect x="5" y="5" width="250" height="45" stroke="#1a1410" stroke-width="0.5" fill="none"/>
+            <rect x="118" y="15" width="8" height="25" fill="#1a1410"/>
+            <rect x="110" y="23" width="24" height="8" fill="#1a1410"/>
+            <circle cx="50" cy="27" r="12" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <circle cx="50" cy="27" r="7" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <circle cx="50" cy="27" r="2" fill="#1a1410"/>
+            <circle cx="210" cy="27" r="12" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <circle cx="210" cy="27" r="7" stroke="#1a1410" stroke-width="1" fill="none"/>
+            <circle cx="210" cy="27" r="2" fill="#1a1410"/>
+          </svg>
+        </div>
+        <p class="pf-desc">Transformed a plain government health report into a visually compelling 16:9 document — color-coded icon system for different health improvement branches, master tree graphic for navigation, advanced InDesign layout.</p>
+        <a href="https://www.behance.net/gallery/227766867/Annual-Report-Design" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- Syndeo — spans 3 -->
+      <div class="pf-item span3">
+        <span class="pf-year">2019</span>
+        <div class="pf-industry">Professional Services</div>
+        <div class="pf-name">Executive Presentation System</div>
+        <div class="pf-client">Syndeo HRO &mdash; syndeohro.com</div>
+        <span class="pf-type">Presentation</span>
+        <span class="pf-type yellow-tag">Marketing Assets</span>
+        <p class="pf-desc">Comprehensive PowerPoint &amp; Google Slides template ecosystem with locked design elements, editable content areas, 16:9/4:3 automatic adaptation, and an integrated icon library with video tutorial documentation.</p>
+        <a href="https://www.behance.net/gallery/80588053/PowerPoint-Template" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <!-- B Young + Unique Maintenance — side by side -->
+      <div class="pf-item span3">
+        <span class="pf-year">2025</span>
+        <div class="pf-industry">Beauty &amp; Wellness</div>
+        <div class="pf-name">Luxury Hair Salon Website</div>
+        <div class="pf-client">B. Young Salon &mdash; b-youngsalon.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Branding</span>
+        <p class="pf-desc">Sophisticated Webflow site capturing the modern, upscale atmosphere of their Wichita location — seamless booking integration and strategic content architecture that converts browsers into booked clients.</p>
+        <a href="https://www.behance.net/gallery/239858209/Luxury-Hair-Salon-Website-Branding" target="_blank" rel="noopener" class="pf-link">View on Behance ↗</a>
+      </div>
+
+      <div class="pf-item span3">
+        <span class="pf-year">2025</span>
+        <div class="pf-industry">Auto Body Services</div>
+        <div class="pf-name">Hail Storm Body Shop Website</div>
+        <div class="pf-client">Unique Maintenance &mdash; icthailrepair.com</div>
+        <span class="pf-type">Web Design</span>
+        <span class="pf-type yellow-tag">Strategy</span>
+        <p class="pf-desc">Lead-generating powerhouse for a professional auto body shop — strategic architecture showcasing service areas and competitive advantages, with prominent CTAs and a focus on what actually matters to drivers.</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; padding: 20px; border: var(--rule); border-top: none; background: var(--cream-dark);">
+      <p style="font-family:'IM Fell English', serif; font-style:italic; font-size:15px; margin-bottom:10px;">See the full portfolio on Behance, including Ferguson Phillips Homeware, Tennison Steel, Studium Architecture, and more.</p>
+      <a href="https://www.behance.net/ndd" target="_blank" rel="noopener" class="cta-btn">View Full Portfolio on Behance ↗</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-flag">
+      <div class="flag-label">Contact &amp; Inquiries</div>
+      <div class="flag-rule"></div>
+      <div class="flag-ornament">✦</div>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-inner">
+
+        <div class="contact-col">
+          <h2 class="contact-headline">Let's make something<br><em>worth looking at.</em></h2>
+          <p class="body-text" style="margin-top:12px;">Ready to stop letting your competition look better online than you do? Get in touch. I'll give you a straight answer on what it'll take and what it'll cost — no runaround, no bait-and-switch.</p>
+        </div>
+
+        <div class="col-rule"></div>
+
+        <div class="contact-col">
+          <div class="contact-detail">
+            <span class="cd-label">Name</span>
+            <span class="cd-value">Nick Drake</span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Studio</span>
+            <span class="cd-value">YLC Creative / Nick Drake Design LLC</span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Location</span>
+            <span class="cd-value">Wichita, Kansas</span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Email</span>
+            <span class="cd-value"><a href="mailto:hello@youlookcool.org">hello@youlookcool.org</a></span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Phone</span>
+            <span class="cd-value"><a href="tel:3164481651">(316) 448-1651</a></span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Web</span>
+            <span class="cd-value"><a href="https://youlookcool.org">youlookcool.org</a></span>
+          </div>
+          <div class="contact-detail" style="border-bottom:none;">
+            <span class="cd-label">Portfolio</span>
+            <span class="cd-value"><a href="https://www.behance.net/ndd" target="_blank" rel="noopener">behance.net/ndd</a></span>
+          </div>
+        </div>
+
+        <div class="col-rule"></div>
+
+        <div class="cta-box">
+          <!-- Spiral ornament -->
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M30 30 Q30 10 50 10 Q68 10 68 30 Q68 52 44 52 Q20 52 20 28 Q20 6 46 6 Q72 6 72 32" stroke="#e8e832" stroke-width="1.5" fill="none"/>
+            <path d="M30 30 Q30 20 40 20 Q50 20 50 30 Q50 40 38 40 Q26 40 26 28 Q26 16 40 16" stroke="#e8e832" stroke-width="1" fill="none"/>
+          </svg>
+          <h3>Start a project</h3>
+          <p>Free consultation. Straight talk about what you need, what it costs, and how long it takes.</p>
+          <a href="mailto:hello@youlookcool.org" class="cta-btn">Get in Touch</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /broadsheet -->
+
+<!-- FOOTER TICKER -->
+<div class="footer-ticker" aria-hidden="true">
+  <div class="footer-ticker-track">
+    <span class="yellow">youlookcool.org</span><span>Nick Drake / YLC Creative</span><span class="yellow">Wichita Web Design</span><span>hello@youlookcool.org</span><span class="yellow">(316) 448-1651</span><span>Branding &amp; Identity</span><span class="yellow">Marketing Assets</span><span>Starting at $549</span>
+    <span class="yellow">youlookcool.org</span><span>Nick Drake / YLC Creative</span><span class="yellow">Wichita Web Design</span><span>hello@youlookcool.org</span><span class="yellow">(316) 448-1651</span><span>Branding &amp; Identity</span><span class="yellow">Marketing Assets</span><span>Starting at $549</span>
+    <span class="yellow">youlookcool.org</span><span>Nick Drake / YLC Creative</span><span class="yellow">Wichita Web Design</span><span>hello@youlookcool.org</span><span class="yellow">(316) 448-1651</span><span>Branding &amp; Identity</span><span class="yellow">Marketing Assets</span><span>Starting at $549</span>
+  </div>
+</div>
+<div class="footer-colophon">
+  <span>© 2025 Nick Drake Design LLC · YLC Creative · All Rights Reserved</span>
+  <span>youlookcool.org &nbsp;·&nbsp; Wichita, Kansas</span>
+</div>
+
+</body>
+</html>
