@@ -13,7 +13,6 @@
   --cream-dark:  #e8e0cc;
   --ink:         #1a1410;
   --ink-mid:     #2c2418;
-  --yellow-light: #F5F5A3;
   --yellow:      #e8e832;
   --yellow-dark: #c8c800;
 
@@ -409,19 +408,6 @@ body {
 
 .ad-cell:hover { background: var(--cream-dark); }
 
-/* Warm yellow gradient on all service cells */
-.ad-cell {
-  background: linear-gradient(135deg, var(--cream) 50%, var(--yellow-light) 100%);
-}
-
-/* Blue gradient override for the wide Web Design cell */
-.ad-cell.wide {
-  background: linear-gradient(135deg, var(--cream) 50%, #e8eeff 100%);
-}
-.ad-cell.wide:hover {
-  background: linear-gradient(135deg, var(--cream) 0%, #b0c4f4 100%);
-}
-
 .ad-cell .ad-category {
   font-family: 'Oswald', sans-serif;
   font-size: 0.875rem;
@@ -448,16 +434,15 @@ body {
   font-size: 28px;
   line-height: 1;
   margin: 8px 0 6px;
-  background: transparent;
+  background: var(--yellow);
   display: inline-block;
-  padding: 4px 14px;
-  border: 2px solid var(--ink);
-  border-radius: 999px;
+  padding: 2px 8px;
 }
 
 .ad-cell .ad-price sup {
   font-size: 1rem;
-  vertical-align: super;}
+  vertical-align: super;
+}
 
 .ad-cell .ad-desc {
   font-size: 0.875rem;
@@ -478,25 +463,6 @@ body {
 .ad-cell.wide            { grid-column: span 2; }
 .ad-cell.wide .ad-name   { font-size: 32px; }
 .ad-cell.wide .ad-price  { font-size: 42px; }
-
-
-/* ── PRICING HERO IMAGE ──────────────────────────────────── */
-
-.pricing-hero {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  overflow: hidden;
-  border: var(--rule);
-  border-bottom: none;
-  margin-top: 20px;
-}
-
-.pricing-hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 
 /* ── PRICING TABLES ──────────────────────────────────────── */
@@ -563,7 +529,7 @@ table td.price-cell {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 15px;
-  background: linear-gradient(135deg, var(--cream) 50%, var(--yellow-light) 100%);
+  background: var(--yellow);
   white-space: nowrap;
 }
 
@@ -719,21 +685,18 @@ table td.tier-name {
   letter-spacing: 0.1em;
 }
 
-/* Portfolio card images — 3:2 ratio, full cell width */
-.pf-img {
+/* Vintage woodcut-style illustration containers */
+.vintage-cut {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  overflow: hidden;
+  height: 80px;
   margin: 10px 0 8px;
-  border: var(--rule-thin);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.55;
 }
-
-.pf-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+.vintage-cut svg { width: 100%; height: 100%; }
 
 
 /* ── CONTACT ─────────────────────────────────────────────── */
