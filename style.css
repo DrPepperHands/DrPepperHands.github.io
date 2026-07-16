@@ -563,7 +563,7 @@ table td.price-cell {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 15px;
-  background: linear-gradient(135deg, var(--cream) 50%, var(--yellow-light) 100%);
+  background: linear-gradient(135deg, var(--cream) 49%, var(--yellow-light) 100%);
   white-space: nowrap;
 }
 
